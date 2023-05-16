@@ -76,14 +76,13 @@ body {
 
 section {
     padding: 10rem 9% 2rem;
+    max-height: 100vh;
 }
 
-section .nouveaute {
+.nouveaute {
     display: flex;
-    background-image: url('/www/cadence/public/Images/image_fond_nouveaute.png');
+    background: url('../Images/Accueil/image_fond_nouveaute.png');
     background-size: cover;
-    background-position: center;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
