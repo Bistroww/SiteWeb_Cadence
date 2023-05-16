@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text-color: #fff;
+    --main-color: #F39322;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: white;
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 12vh;
+}
+
+.header.sticky {
+    border-bottom: 1rem solid black;
+}
+
+.logo_image {
+    width: 140px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+@keyframes bounce{
+    from {margin-top: 0px;}
+    50%  {margin-top: -10px;}
+    to   {margin-top: 0px;}
+}
+
+.logo_image:hover {
+    animation: bounce 0.35s ease infinite alternate;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .2s;
+    text-transform: uppercase;
+    font-family: "Inter";
+}
+
+.navbar a:hover, .navbar a.active {
+    color: var(--text-color);
+}
+
+section {
+    padding: 10rem 9% 2rem;
+}
+
+section .nouveaute {
+    display: flex;
+    background-image: url('/www/cadence/public/Images/image_fond_nouveaute.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
