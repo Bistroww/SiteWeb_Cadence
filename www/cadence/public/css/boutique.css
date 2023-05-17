@@ -109,16 +109,29 @@ padding: 100px;
 
 
 .case {
-
+    font-family: "Inter";
+        background-color: rgb(243, 244, 246);
+        
         flex-basis: 35%;
         font-size: 18px;
-        padding: 26px;
+        margin: 10px;
+        padding-top: 10%;
+        padding-bottom: 10%;
         color: black;
         vertical-align: top;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        border-radius: 8px;
         flex-basis: 40%;
+    }
+
+    h4 {
+        margin: 10px;
+    }
+
+    .case:hover {
+        animation: bounce 0.35s ease infinite alternate;
+        cursor: pointer;
+        transition: .3s;
     }
