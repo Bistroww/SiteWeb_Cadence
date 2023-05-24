@@ -1,88 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Pppins', sans-serif;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
 }
 
-:root {
-    --text-color: #fff;
-    --main-color: #F39322;
-}
 
-html {
-    overflow-x: hidden;
-}
 
-body {
-    background: white;
-    color: var(--text-color);
-}
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* FOOTER CSS */
+
+/*.footer{
+    margin-top: 150px;
     width: 100%;
-    padding: 2rem 9%;
-    background: var(--main-color);
+    padding: 100px 15%;
+    background : #f9a508;
+    color : #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    height: 12vh;
 }
-
-.header.sticky {
-    border-bottom: 1rem solid black;
+.footer div {
+    text-align: center;
 }
+.footer_2_link {
+    flex-grow: 2;
+} */
 
-.logo_image {
-    width: 140px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-@keyframes bounce{
-    from {margin-top: 0px;}
-    50%  {margin-top: -10px;}
-    to   {margin-top: 0px;}
-}
-
-.logo_image:hover {
-    animation: bounce 0.35s ease infinite alternate;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.navbar a {
-    font-size: 1.2rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    transition: .2s;
-    text-transform: uppercase;
-    font-family: "Inter";
-}
-
-.navbar a:hover, .navbar a.active {
-    color: var(--text-color);
-}
-
-section {
-    padding: 10rem 9% 2rem;
-    max-height: 100vh;
-}
-
-.nouveaute {
+footer {
+    list-style: none;
+    text-decoration: none;
+    background-color: #f9f9f9;
+    border-top: 4px solid #f9a508;
+    padding : 50px 0%;
     display: flex;
-    background: url('../Images/Accueil/image_fond_nouveaute.png');
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
+
+footer h2, footer h3 {
+    color: #f9a508;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+footer div p a {
+    color:rgb(40, 40, 40);
+    text-decoration: none
+}
+
+footer div p a:hover {
+    color: #f9a508;
+    text-decoration: none
+}
+
+footer ul li{
+    list-style: none;
+    text-decoration: none;
+    color:rgb(40, 40, 40);    
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 25px;
+    }
+}
+
+footer ul li a{
+    text-decoration: none;
+    color:rgb(40, 40, 40);
+}
+
+footer ul li a:hover{
+    color: #f9a508;
+}
+
+footer ul li ul li{
+    margin-left: 20px;
+}
+
+footer ul li ul li a{
+    color:rgb(40, 40, 40);
+}
+
+footer ul li ul li a:hover{
+    color: #f9a508;
+}
+
+footer p {
+    color:rgb(40, 40, 40);
+}
+
