@@ -74,15 +74,64 @@ body {
     color: var(--text-color);
 }
 
-section {
-    padding: 10rem 9% 2rem;
-    max-height: 100vh;
-}
 
-.nouveaute {
+
+section .nouveaute {
     display: flex;
-    background: url('../Images/Accueil/image_fond_nouveaute.png');
+    background-image: url('/www/cadence/public/Images/image_fond_nouveaute.png');
     background-size: cover;
+    background-position: center;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
+
+
+.introduction{
+    display: block;
+}
+
+
+.boutique {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+padding: 100px;
+    max-width: 100%;
+}
+
+
+.boutique img{
+    height: 300px;
+    margin-bottom: 20%;
+}
+
+
+.case {
+    font-family: "Inter";
+        background-color: rgb(243, 244, 246);
+        
+        flex-basis: 35%;
+        font-size: 18px;
+        margin: 10px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        color: black;
+        vertical-align: top;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 40%;
+    }
+
+    h4 {
+        margin: 10px;
+    }
+
+    .case:hover {
+        animation: bounce 0.35s ease infinite alternate;
+        cursor: pointer;
+        transition: .3s;
+    }
