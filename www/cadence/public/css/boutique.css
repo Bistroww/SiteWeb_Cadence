@@ -89,6 +89,7 @@ section .nouveaute {
 
 .introduction{
     display: block;
+    color: black;
 }
 
 
@@ -97,12 +98,12 @@ section .nouveaute {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     width: 100%;
-padding: 100px;
+    padding: 300px;
     max-width: 100%;
 }
 
 
-.boutique img{
+.biere{
     height: 300px;
     margin-bottom: 20%;
 }
@@ -111,7 +112,6 @@ padding: 100px;
 .case {
     font-family: "Inter";
         background-color: rgb(243, 244, 246);
-        
         flex-basis: 35%;
         font-size: 18px;
         margin: 10px;
@@ -124,6 +124,11 @@ padding: 100px;
         justify-content: space-between;
         align-items: center;
         flex-basis: 40%;
+    }
+    
+    .panier {
+        width: 10%;
+        height: 10%;
     }
 
     h4 {
