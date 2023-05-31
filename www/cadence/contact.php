@@ -14,7 +14,7 @@
             <a href="index.html" class="active">Accueil</a>
             <a href="boutique.html">Boutique</a>
             <a href="presentation.html">Présentation</a>
-            <a href="moncompte.html">Mon compte</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
