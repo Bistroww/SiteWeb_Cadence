@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadence | Contact</title>
+    <link rel="stylesheet" href="public/css/boutique.cs">
+</head>
+<body>
+
+
+    <header class="header">
+        <a href="index.html" class="logo_lien"><img class="logo_image" src="public/Images/Accueil/logo_cadence_blanc.png"></a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="presentation.html">Présentation</a>
+            <a href="moncompte.html">Mon compte</a>
+        </nav>
+    </header>
+
+<main>
+    <h1>CONTACTEZ-NOUS</h1>
+    <h3>Une requête ? Une suggestion ? Ecris-nous ici.</h3>
+    <div class="contact">
+    <div class="container">
+    <div class="formul">
+    <form id="form" enctype="multipart/form-data" onsubmit="return validate()" method="post"> 
+            <div class="rowed">
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom"/>
+            
+		    <input type="text" id="nom" name="nom" placeholder="Nom"/>
+            
+		    <input type="text" id="email" name="email" placeholder="E-mail"/>
+            </div>
+            
+            <input type="text" id="sujet" name="sujet" placeholder="Sujet"/>
+		    <textarea id="message" name="message" placeholder="Message"></textarea>
+            <br><br>
+		    <input id="botto" type="submit" name="send" value="Envoyer"/>
+            <br><br><br>
+			<div id="statusMessage"> 
+            <!--<?php if (! empty($db_msg)) { ?>
+              <p class='<?php echo $type_db_msg; ?>Message'><?php echo $db_msg; ?></p>
+            <?php } ?>-->
+            </div>
+    </form>
+    </div>
+    
+    </div>
+    </div>
+    </main>
