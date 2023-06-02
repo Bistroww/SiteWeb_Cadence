@@ -3,8 +3,8 @@
 function getdb(): PDO
 {
     $dsn = 'mysql:dbname=' .DB_NAME. ';host=' .DB_HOST. ';charset=utf8';
-    $username = 'root';
-    $password = '';
+    $username = DB_USER;
+    $password = DB_PASSWORD;
 
     try {
         $db = new PDO($dsn, $username, $password);
