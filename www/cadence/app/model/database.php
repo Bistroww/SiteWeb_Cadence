@@ -2,7 +2,7 @@
 
 function getdb(): PDO
 {
-    $dsn = 'mysql:dbname=cadence;host=localhost;charset=utf8';
+    $dsn = 'mysql:dbname=' .DB_NAME. ';host=' .DB_HOST. ';charset=utf8';
     $username = 'root';
     $password = '';
 
@@ -16,4 +16,26 @@ function getdb(): PDO
     }
 
     return $db;
+}
+
+function GetBiere(PDO $db)
+{
+    $db = getdb();
+    $sql = 'SELECT * FROM biere';
+    $query = $db->prepare($sql);
+    $query->execute();
+    $bieres = $query->fetchAll(PDO::FETCH_ASSOC);;
+    return $bieres;
+    var_dump($bieres);
+}
+
+function GetClient(PDO $db)
+{
+    $db = getdb();
+    $sql = 'SELECT * FROM client';
+    $query = $db->prepare($sql);
+    $query->execute();
+    $clients = $query->fetchAll(PDO::FETCH_ASSOC);;
+    return $clients;
+    var_dump($clients);
 }
