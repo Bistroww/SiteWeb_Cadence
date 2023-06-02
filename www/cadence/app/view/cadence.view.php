@@ -14,11 +14,11 @@
         </div>
     </section>
 
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
+        <div class="waves2">
+            <div class="wave2" id="wave1"></div>
+            <div class="wave2" id="wave2"></div>
+            <div class="wave2" id="wave3"></div>
+            <div class="wave2" id="wave4"></div>
         </div>
 
     <section class="section_biere">
@@ -33,7 +33,7 @@
     </section>
 
     <section class="pub">
-        <video class="publicite" src="public/Images/Accueil/CADENCE_Publicité.mp4" controls poster="public/Images/Accueil/miniature.png"></video>
+        <video class="publicite" src="public/Images/Accueil/CADENCE_video.mp4" controls poster="public/Images/Accueil/miniature.png"></video>
     </section>
 
     <section class="presentation">
@@ -218,7 +218,7 @@
 }
 
 .publicite {
-    max-height: 100vh;
+    min-height: 100vh;
     width: 100%;
     object-fit: cover;
 }
@@ -341,35 +341,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 8%;
+    padding-bottom: 10%;
 }
 
-.wave {
+.wave2 {
     position: absolute;
     left: 0;
-    top: 100%;
+    margin-top: -2px;
     width: 100%;
     height: 100px;
-    background: url('../../public/images/acceuil/wave/wave.png');
+    background: url('public/Images/Accueil//wave/wave2.png');
     background-size: 1000px 100px;
     z-index: 2;
 }
 
-.wave#wave1 {
+.wave2#wave1 {
     z-index: 1;
     animation: animate 20s linear infinite;
     opacity: 0.5;
     filter: blur(2px);
 }
 
-.wave#wave2 {
+.wave2#wave2 {
     z-index: 2;
     animation: animate 15s linear infinite reverse;
     opacity: 0.8;
     filter: blur(1px);
 }
 
-.wave#wave3 {
+.wave2#wave3 {
     z-index: 3;
     animation: animate 25s linear infinite;
     opacity: 0.3;

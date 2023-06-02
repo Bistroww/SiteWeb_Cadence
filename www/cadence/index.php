@@ -1,13 +1,13 @@
 <?php
 
 include 'config.php';
-include 'app\model\database.php';
+include 'app/model/database.php';
 
 
 
 
 ob_start();
-include 'app\view\cadence.view.php';
+include 'app/view/cadence.view.php';
 $content = ob_get_clean();
 require_once 'app/view/common/layout.php';
 

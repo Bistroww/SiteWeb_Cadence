@@ -223,9 +223,21 @@ header {
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #fefefe;
+    width: 22%;
+}
+
+.logo:hover {
+    animation: swing 2s ease;
+}
+
+@keyframes swing {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-15%) rotate(-5deg); }
+    30% { transform: translateX(12%) rotate(3deg); }
+    45% { transform: translateX(-10%) rotate(-3deg); }
+    60% { transform: translateX(7%) rotate(2deg); }
+    75% { transform: translateX(-3%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
 }
 
 .hamburger {
@@ -324,7 +336,7 @@ header {
 footer {
     position: relative;
     width: 100%;
-    background: var(--cadence-color);
+    background: var(--main-color);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -386,9 +398,8 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../images/wave.png);
+    background: url('../Images/wavealed.png');
     background-size: 1000px 100px;
-    transform: rotate(180deg);
 }
 
 footer .wave#wave1 {
