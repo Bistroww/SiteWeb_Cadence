@@ -45,3 +45,12 @@
             </div>
         </div>
  </body>
+<script>
+    ScrollReveal({ 
+    distance: '120px',
+    duration: 2000,
+    delay: 200 
+  });
+  
+  ScrollReveal().reveal('.product', { origin: 'top' });
+</script>
