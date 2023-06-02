@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1{
+    font-family: 'Alata';
+    text-align: center;
+    font-size: 50px;
+}
+
+
+h2{
+    font-family: 'Alata';
+    text-align: center;
+    font-size: 40px;
+}
+
+img{
+    height: 23rem;
+    margin-top: 10px;
+  }
+
+.droite1, .droite2, .droite3, .droite4{
+
+  margin-left: 75px;
+
+}
+
+.gauche1{
+
+  margin-right: 50px;
+
+
+}
+
+  
+  .un, .deux, .trois , .quatre, .cinq, .six, .sept{
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr 2fr;
+    align-items: center;
+    padding-left: 300px;
+  }
+
+  main{
+
+    padding: 50px;
+  }
+ 
+p{
+    font-family: 'Quicksand ';
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+ 
+}
