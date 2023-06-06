@@ -1,19 +1,19 @@
 <?php
 
 include 'config.php';
-include 'app/model/database.php';
+include 'app\model\database.php';
 
 
 
 
 ob_start();
-include 'app/view/cadence.view.php';
+include 'app\view\cadence.view.php';
 $content = ob_get_clean();
 require_once 'app/view/common/layout.php';
 
-// Affichier les erreurs PHP
+// Affichier les erreurs PHP dans le navigateur
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
+// Afficher les erreurs lié à PDO

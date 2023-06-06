@@ -18,7 +18,7 @@
 <body>
 
     <header>
-        <a href="index.php"><img class="logo" src="public/Images/Accueil/logo_cadence_blanc.png"></a>
+        <div class="logo">Cadence</div>
         <div class="hamburger">
             <div class=line></div>
             <div class=line></div>

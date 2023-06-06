@@ -10,11 +10,13 @@ function getdb(): PDO
         $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); // Set default fetch mode to array
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false); // Disable emulated prepared statements
     } catch (PDOException $e) {
-        echo 'Erreur de connxion à la base de données : ' . $e->getMessage();
+        die ('Erreur de connxion à la base de données : ' . $e->getMessage());
     }
 
     return $db;
 }
+
+
 
 function GetBiere(PDO $db)
 {
