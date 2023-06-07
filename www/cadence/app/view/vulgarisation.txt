@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadence | Accueil</title>    
+    <link rel="stylesheet" type="text/css" href="../cadence/public/css/vulgarisation.css">
+    <link rel="icon" type="image/svg+xml" href="public/Images/Accueil/logo_petit.png" witdh="2px" height="2px">
+</head>
+<body>
+
+
+<main> 
+        <section class="introduction">
+            <h1 id="titre">La Recette de Cadence : Rio</h1>
+            <p id="texteintro">Étudiants passionnés de voyages et de festivités, nous avons créé Cadence pour vous transmettre le goût du voyage et 
+                des carnavals du monde entier. Notre bière, grâce à ses saveurs festives liées au Brésil, à base de mangues, caramboles, met en avant
+                le carnaval de Rio et décore vos apéros grâce à son visuel unique et ses pailettes !</p>
+        </section>
+
+
+
+        <div class="contenue">
+
+            <section class="Texte1">
+                <video width="640" height="360" controls id="videoconcassage">
+                <source src=”https://youtube.com/shorts/DZWlembowcg” type=video/ogg> <source src="../cadence/public/Images/Vulgarisation/ecrasement.mp4" type=video/mp4>
+                </video>
+            </section>
+
+        <section class="Texte1">
+                <p id>1: Concassage = Casser les grains de malt pour pouvoir en extraire l'amidon et les protéines.</p>
+        </section>
+
+        
+            <section class="Video2">
+                <video width="640" height="360" controls id="videoempatage">
+                    <source src=”https://youtube.com/shorts/DZWlembowcg” type=video/ogg> <source src="../cadence/public/Images/Vulgarisation/empaquetage.mp4" type=video/mp4>
+                        </video>
+                        <!-- <video width="640" height="360" controls id="videodreche">
+                    <source src=”https://youtube.com/shorts/DZWlembowcg” type=video/ogg> <source src="../cadence/public/Images/Vulgarisation/dreche.mp4" type=video/mp4>
+                </video> -->
+            </section>
+
+                <section class="Texte2">
+                    <p >2 : Empatage = Infusion du malt dans de l'eau pour l'extraction des nutriments.
+                                       Rinçage des drêches = Sortir les drêches du moût et les rincer pour extraire le plus de nutriments.</p>
+                </section>
+        
+
+        
+            <section class="Video3">
+                <video width="640" height="360" controls id="videoebullition">
+                    <source src=”https://youtube.com/shorts/DZWlembowcg” type=video/ogg> <source src="../cadence/public/Images/Vulgarisation/caboue.mp4" type=video/mp4>
+                    </video> 
+                </section>
+
+            <section class="Texte3">
+                <p >3 : Ebullition = Bouillir le moût permet de détruire les sucres et de détruire les pathogènes présents dans l'eau et sur les grains + ajout des houblons.</p>
+            </section>
+        
+
+        
+            <section class="Video4">
+                <video width="640" height="360" controls id="videorefroidissement">
+                <source src=”https://youtube.com/shorts/DZWlembowcg” type=video/ogg> <source src="../cadence/public/Images/Vulgarisation/refroiddisement.mp4" type=video/mp4>
+                </video> 
+            </section>
+
+            <section class="Texte4">
+                <p >4 : Refroidissement et première filtration = Refroidir le moût de 100°C à ≈25°C pour ne pas faire mourir les levures lors de leur ajout et retirer les sédiments.</p>
+            </section>
+
+        
+            <section class="Video5">
+                <video width="640" height="360" controls id="videofermentation">
+                <source src=”https://youtube.com/shorts/DZWlembowcg” type=video/ogg> <source src="../cadence/public/Images/Vulgarisation/Snapchat-450291234.mp4" type=video/mp4>
+                </video> 
+                </section>
+
+            <section class="Texte5">
+                <p >5 : Fermentation = Laisser les levures dans le moût en laissant fermenter les sucres et ainsi produire de l'alcool et du gaz carbonique qui sera évacué.</p>
+            </section>
+            
+
+        <section class="Video6">
+            
+                <video width="640" height="360" controls id="videofiltration">
+                <source src=”https://youtube.com/shorts/DZWlembowcg” type=video/ogg> <source src="../cadence/public/Images/Vulgarisation/.mp4" type=video/mp4>
+                </video> 
+            </section>
+
+            <section class="Texte6">
+                <p >6 : Filtration = Séparer le moût des levures mortes ou en sommeil pour une meilleur fermentation en bouteille..</p>
+            </section>
+      
+
+            <section class="Video7">
+                <img src="../cadence/public/Images/Vulgarisation/fermentation.jpg" id="Fermentation" width="640" height="360">
+              
+                </section>
+            <section class="Texte7">
+                <p >7: Mise en bouteille = Mettre en bouteille la bière avec un sirop de sucre pour permettre une refermentation en bouteille, il est important d'avoir préalablement stérilisé une 2nde cuve et les bouteilles.</p>
+            </section>
+
+    </div>
+</main> 

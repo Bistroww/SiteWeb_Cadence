@@ -19,4 +19,7 @@
         <li>
             <a href="contact.php">Contact</a>
         </li>
+            <li>
+                <a href="moncompte.php">Mon compte</a>
+        </li>
     </ul>

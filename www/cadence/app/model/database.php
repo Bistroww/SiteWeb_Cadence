@@ -3,9 +3,11 @@
 function getdb(): PDO
 {
     $dsn = 'mysql:dbname=' .DB_NAME. ';host=' .DB_HOST. ';charset=utf8';
+    $username = DB_USER;
+    $password = DB_PASSWORD;
 
     try {
-        $db = new PDO($dsn, DB_USER, DB_PASSWORD);
+        $db = new PDO($dsn, $username, $password);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Set Errorhandling to Exception
         $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); // Set default fetch mode to array
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false); // Disable emulated prepared statements
@@ -15,8 +17,6 @@ function getdb(): PDO
 
     return $db;
 }
-
-
 
 function GetBiere(PDO $db)
 {
